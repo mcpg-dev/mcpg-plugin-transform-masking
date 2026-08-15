@@ -1,0 +1,13 @@
+schema: mcpg.dev/plugin/v1
+id: dev.mcpg.transform.masking
+name: Field Masking Transform
+license: Apache-2.0
+description: |
+  WASI Component Model transform plugin that masks sensitive
+  fields in tool arguments and results. Field names to mask are
+  configured via the plugin config JSON; supports strict /
+  output_only / input_only policies and nested object traversal.
+class: transform
+runtime: wasi-v1
+protocol_version: "1.0"
+required_capabilities: []
