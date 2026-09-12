@@ -1,6 +1,6 @@
 [package]
 name = "mcpg-plugin-transform-masking"
-version = "0.1.0-alpha.25"
+version = "0.1.0-alpha.26"
 license = "Apache-2.0"
 edition = "2024"
 description = "MCPG Wasm transform plugin — masks sensitive fields (PII, secrets)"
