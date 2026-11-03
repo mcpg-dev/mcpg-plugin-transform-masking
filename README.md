@@ -12,6 +12,11 @@ sandbox under operator-set memory, fuel, and wall-clock limits. Reach for it
 when a downstream system returns more than a caller should see and you want the
 redaction enforced at the gateway rather than trusted to the backend.
 
+> **Not loadable by the released gateway.** The released `mcpg` binaries and
+> images are built without the `wasm-plugins` feature, so a `kind: wasm` entry
+> stops the boot with "wasm plugin support requires the 'wasm-plugins' feature
+> flag". The plugin needs a gateway built with that feature.
+
 ## What it does
 - Walks arguments and results and redacts every field whose name matches an entry in `redact_fields`, comparing case-insensitively.
 - Matches an exact field name, or a `prefix_*` pattern that covers every key starting with that prefix.
